@@ -29,6 +29,6 @@ echo $result;
 </ul>
 El resultado en el navegador debería ser algo parecido a esto:
 
-![alt text] (https://github.com/Antonio-HR/php-scraping/blob/master/img/ejemplo.png "ejemplo")
+<img src="https://github.com/Antonio-HR/php-scraping/blob/master/img/ejemplo.png" title="ejemplo"></img>
 
 A continuación, con botón derecho guardamos el contenido como .csv. Ya lo podemos importar a excel para hacer análisis de datos.
