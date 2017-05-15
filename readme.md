@@ -29,6 +29,6 @@ echo $result;
 </ul>
 El resultado en el navegador debería ser algo parecido a esto:
 
-[logo]: /img/ejemplo.png "ejemplo"
+![alt text] /img/ejemplo.png "ejemplo"
 
 A continuación, con botón derecho guardamos el contenido como .csv. Ya lo podemos importar a excel para hacer análisis de datos.
