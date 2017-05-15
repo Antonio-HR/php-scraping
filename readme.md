@@ -12,7 +12,7 @@ Para aprender en profundidad sobre cómo usar la librería, acudir a la [documen
 
 3. Crear un fichero que se llame index.php en el que escribiremos las siguientes instrucciones que configurarán el script que scrapea.
 
-*`require_once '/lib/simpleHtmlDom/simple_html_dom.php';` Requerir la librería.
+..*`require_once '/lib/simpleHtmlDom/simple_html_dom.php';` Requerir la librería.
 *`$html = new simple_html_dom();` instanciación del objeto simple_html_dom().
 *`$url = "html/ministros.html";` guardar en una variable $url el html descargado.
 *`$html->load_file($url);` le pasamos como parámetro el html al método load_file del objeto $html. Está función cargará la información almacenada en la variable $url para tratarla a continuación.
