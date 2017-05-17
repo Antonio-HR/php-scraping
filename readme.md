@@ -4,7 +4,7 @@ Simple HTML DOM Parser es una librería de PHP -un lenguaje de servidor muy úti
 2. Instalar PHP en el servidor.
 3. Un editor de texto / entorno de desarrollo (Eclipse) con depurador para PHP. Un depurador ayuda a encontrar fallos y mejorar la funcionalidad de nuestro script.
 
-Una alternativa a todo lo anterior es instalar la consola de comandos de PHP y hacer el scraping a través de ella. En este caso no haría falta instalar un servidor web. Más información <a href="http://www.php-cli.com/">aquí</a>.
+Una alternativa a todo lo anterior es ejecutar PHP a través de la consola de comandos y hacer el scraping a través de ella. En este caso no haría falta instalar un servidor web. Más información <a href="http://www.php-cli.com/">aquí</a>.
 
 Para aprender en profundidad sobre cómo usar la librería, acudir a la [documentación](http://simplehtmldom.sourceforge.net/manual.htm). A continuación se describen los pasos seguidos para scrapear un listado simple como este de la [Wikipedia](https://es.wikipedia.org/wiki/Categor%C3%ADa:Ministros_del_franquismo).
 
@@ -19,7 +19,7 @@ Para aprender en profundidad sobre cómo usar la librería, acudir a la [documen
 <li><code>$url = "html/ministros.html";</code> guardar en una variable $url el html descargado.</li>
 <li><code>$html->load_file($url);</code> le pasamos como parámetro el html al método load_file del objeto $html. Está función cargará la información almacenada en la variable $url para tratarla a continuación.</li>
 <li><code>$element = $html->find('div[id=mw-pages] li a');</code> Almacenamos en la variable $element, el elemento que queremos scrapear. En este caso al ser un anchor, dentro de un elemento de lista que se encuentra alojado dentro de un div cuyo id es mw-pages, lo invocaremos de esta manera. Para aprender más sobre la estructura del DOM y su inspección sigue este <a href="https://www.youtube.com/watch?v=nV9PLPFTnkE">enlace</a>.</li>
-<li><code>$result = "nombre;\r\n";</code> Almacenamos la cabecera del fichero csv que queremos tener al final. En este caso, se llamara nombre, ponemos ; para estructurar y los caracteres escapados de salto de línea.</li>
+<li><code>$result = "nombre;\r\n";</code> Almacenamos la cabecera del fichero csv que queremos tener al final. En este caso, solo habrá una columna llamada nombre; si tuvieramos más, habría que ponerlas a continuación de nombre y separadas por ";". Utilizamos este signo de puntuación para estructurar los datos y los caracteres escapados "\r\n" para simular un salto de línea. Esto es muy importante hacerlo de cara a importar los datos en Excel y no llevarnos las manos a la cabeza...</li>
 <li>Creamos un bucle para recorrer el elemento (el li anteriormente mencionado) y almacenarlo en la variable $result junto a la cabecera del paso anterior. A continuación, imprimimos el resultado, hacemos un echo.
 <pre>
 foreach ($element as $elementHTML){
