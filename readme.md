@@ -4,6 +4,8 @@ Simple HTML DOM Parser es una librería de PHP -un lenguaje de servidor muy úti
 2. Instalar PHP en el servidor.
 3. Un editor de texto / entorno de desarrollo (Eclipse) con depurador para PHP. Un depurador ayuda a encontrar fallos y mejorar la funcionalidad de nuestro script.
 
+Una alternativa a todo lo anterior es instalar la consola de comandos de PHP y hacer el scraping a través de ella. En este caso no haría falta instalar un servidor web. Más información <a href="http://www.php-cli.com/">aquí</a>
+
 Para aprender en profundidad sobre cómo usar la librería, acudir a la [documentación](http://simplehtmldom.sourceforge.net/manual.htm). A continuación se describen los pasos seguidos para scrapear un listado simple como este de la [Wikipedia](https://es.wikipedia.org/wiki/Categor%C3%ADa:Ministros_del_franquismo).
 
 1. Descargar el listado de la [Wikipedia](https://es.wikipedia.org/wiki/Categor%C3%ADa:Ministros_del_franquismo). (Click derecho, guardar como .html).
